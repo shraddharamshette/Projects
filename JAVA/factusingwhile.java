@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class fact
+class factusingwhile
 {
     public static void main(String args[])
     {
@@ -7,10 +7,12 @@ class fact
         int sum=1;
         System.out.println("enter a number");
         Scanner sc=new Scanner(System.in);
-        num=sc.nextInt()
-        for(int i=1;i<=num;i++)
+        num=sc.nextInt();
+        while(num>0)
         {
-        sum=i*sum;
+        sum=num*sum;
+        num--;
+        
         }
     System.out.println("factorial is:"+sum);
 
