@@ -3,27 +3,28 @@ class sumdigit
 {
     public static void main(String args[])
     {
-        Scanner sc=new Scanner(System.in);
-        int num,sum,c;
-        sum=0;
        
-        c=num;
-        
-        System.out.println("enter a number");
-        
-        num=sc.nextInt();
-        while(num>0)
+        while(true)
         {
+            int num,sum,c;
+            sum=0;
+            Scanner sc=new Scanner(System.in); 
+            System.out.println("enter a number");
             
-         c=num%10;
-         sum=sum+c;
-         num=num/10;
-
+            num=sc.nextInt();
+             if(num<0)
+                {
+                    System.out.println("please enter positive number");
+            
+                }
         
-        
-        }
-        System.out.println("sum of digits is:"+sum);
-        
+            while(num>0)
+                {  
+                    c=num%10;
+                    sum=sum+c;
+                    num=num/10;
+                }
+            System.out.println("sum of digits is:"+sum);    
+        } 
     }  
-
 }
